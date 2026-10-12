@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* padding al input */
+
+.text-indent {
+    text-indent: .5rem;
+}
+
+
+/* contraseña e icono */
+
+.password__icon {
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+/* fondo grey */
+
+.bg-grey-light {
+    background: #f0f0f0;
+}
+
+.bg-grey-light:focus {
+    background: #f0f0f0;
+}
+
+@media (min-width: 1024px) {
+    /* body {
+        overflow-y: hidden; 
+    } */
+    nav div .nav-item{
+        width: 80%;
+    }
+   /* fondo del circulo  */
+    .ball {
+        overflow: hidden;
+        transition: margin 1s;
+        width: 400px;
+        height: 400px;
+    }
+    .ball.login {
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    .ball.register {
+        margin-left: 14%;
+        margin-top: 6%;
+    }
+    /* bouncing effect */
+    .bounce {
+        animation: bounce 2s infinite alternate;
+        -webkit-animation: bounce 2s infinite alternate;
+    }
+    @keyframes bounce {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(-35px);
+        }
+    }
+    @-webkit-keyframes bounce {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(-35px);
+        }
+    }
+    /* registro activo */
+    .register__form.active {
+        margin-left: 10% !important;
+        opacity: 1;
+    }
+    /* login activo */
+    .login__form.active {
+        opacity: 1;
+        margin-left: 10% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .col-12.p-5 {
+        padding: 0px !important;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+/* registro por defectto */
+
+.register__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    transition: margin 1s, opacity .5s;
+    z-index: 1;
+}
+
+
+/* registro activo e */
+
+.register__form.active {
+    margin-left: 0%;
+    opacity: 1;
+}
+
+
+/* login por defecto */
+
+.login__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    transition: margin 1s, opacity .5s;
+    z-index: 1;
+}
+
+
+/* login activo  */
+
+.login__form.active {
+    opacity: 1;
+    margin-left: 0%;
+}
+
+
+*{
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+#listanav li a{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+#listanav li{
+    font-size: 20px;
+}
+#listanav li a:hover{
+    color: #28a745;
+    text-shadow: black;
+    text-decoration:underline ;
+    font-size: 30px;
+}
+
+.info-nav {
+    width: 100vw;
+    height: 40px;
+    background: black;
+}

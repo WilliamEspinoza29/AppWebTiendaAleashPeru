@@ -1,0 +1,49 @@
+/*Estilos del nav*/
+*{
+    margin: 0px auto;
+    padding: 0px auto;
+
+}
+
+#listanav li a{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+#listanav li{
+    font-size: 18px;
+}
+#listanav li a:hover{
+    color: #28a745;
+    text-shadow: black;
+    text-decoration:underline ;
+    font-size: 30px;
+}
+#navbarDropdown{
+    font-size: 18px;
+}
+
+#navbarDropdown:hover{
+    color: #0033ff;
+    text-shadow: black;
+}
+
+
+@media (max-width: 366px) {
+    #navbarDropdown {
+        width: 70%;
+        font-size: 10px;
+    }
+
+    #listanav li{
+        font-size: 14px;
+    }
+    body{
+        overflow-x: hidden ;
+    }
+}
+
+.info-nav {
+    width: 100vw;
+    height: 40px;
+    background: black;
+}
